@@ -13,6 +13,7 @@
 		25579C3D2715145500E01803 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25579C3C2715145500E01803 /* Preview Assets.xcassets */; };
 		25579C452715154200E01803 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25579C442715154200E01803 /* APIConstants.swift */; };
 		25579C4A2715164800E01803 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25579C492715164800E01803 /* Question.swift */; };
+		25579C4D2715186F00E01803 /* QuestionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25579C4C2715186F00E01803 /* QuestionScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		25579C3C2715145500E01803 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		25579C442715154200E01803 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		25579C492715164800E01803 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		25579C4C2715186F00E01803 /* QuestionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		25579C472715160D00E01803 /* Question */ = {
 			isa = PBXGroup;
 			children = (
+				25579C4B2715185200E01803 /* Screen */,
 				25579C482715162600E01803 /* Model */,
 			);
 			path = Question;
@@ -103,6 +106,14 @@
 				25579C492715164800E01803 /* Question.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		25579C4B2715185200E01803 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				25579C4C2715186F00E01803 /* QuestionScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25579C382715143700E01803 /* ContentView.swift in Sources */,
+				25579C4D2715186F00E01803 /* QuestionScreen.swift in Sources */,
 				25579C4A2715164800E01803 /* Question.swift in Sources */,
 				25579C362715143700E01803 /* JeopardyAppApp.swift in Sources */,
 				25579C452715154200E01803 /* APIConstants.swift in Sources */,
