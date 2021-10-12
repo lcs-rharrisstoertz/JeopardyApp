@@ -11,6 +11,8 @@
 		25579C382715143700E01803 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25579C372715143700E01803 /* ContentView.swift */; };
 		25579C3A2715145500E01803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25579C392715145500E01803 /* Assets.xcassets */; };
 		25579C3D2715145500E01803 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25579C3C2715145500E01803 /* Preview Assets.xcassets */; };
+		25579C452715154200E01803 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25579C442715154200E01803 /* APIConstants.swift */; };
+		25579C4A2715164800E01803 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25579C492715164800E01803 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		25579C372715143700E01803 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		25579C392715145500E01803 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25579C3C2715145500E01803 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		25579C442715154200E01803 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		25579C492715164800E01803 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		25579C342715143700E01803 /* JeopardyApp */ = {
 			isa = PBXGroup;
 			children = (
+				25579C46271515EA00E01803 /* Feature */,
+				25579C432715152900E01803 /* Constants */,
 				25579C352715143700E01803 /* JeopardyAppApp.swift */,
 				25579C372715143700E01803 /* ContentView.swift */,
 				25579C392715145500E01803 /* Assets.xcassets */,
@@ -65,6 +71,38 @@
 				25579C3C2715145500E01803 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		25579C432715152900E01803 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				25579C442715154200E01803 /* APIConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		25579C46271515EA00E01803 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				25579C472715160D00E01803 /* Question */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		25579C472715160D00E01803 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				25579C482715162600E01803 /* Model */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		25579C482715162600E01803 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				25579C492715164800E01803 /* Question.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +176,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				25579C382715143700E01803 /* ContentView.swift in Sources */,
+				25579C4A2715164800E01803 /* Question.swift in Sources */,
 				25579C362715143700E01803 /* JeopardyAppApp.swift in Sources */,
+				25579C452715154200E01803 /* APIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +317,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +347,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
