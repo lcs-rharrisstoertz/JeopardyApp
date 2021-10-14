@@ -14,15 +14,18 @@ struct QuestionScreen: View {
     )
     
     var body: some View {
+        
         ZStack {
             Color(red: 0.2, green: 0.3, blue: 0.8, opacity: 1.0)
                 .ignoresSafeArea()
+            
             VStack {
                 if vm.question.isEmpty {
                     LoadingView(text: "Getting question")
                 } else {
                     QuestionView(question: vm.question.last!)
                 }
+                
             }
             .task {
                 await vm.getRandomQuestion()

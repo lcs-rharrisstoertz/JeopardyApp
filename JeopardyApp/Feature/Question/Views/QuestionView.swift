@@ -23,7 +23,7 @@ struct QuestionView: View {
                 .background(Color.white)
                 .foregroundColor(Color.blue)
         }
-        Text(question.question)
+        Text(question.answer)
             .font(.title2)
             .fontWeight(.semibold)
     }
