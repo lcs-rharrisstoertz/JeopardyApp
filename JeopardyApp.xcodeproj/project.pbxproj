@@ -17,6 +17,7 @@
 		25CBC0222717EFEC0016334F /* QuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CBC0212717EFEC0016334F /* QuestionService.swift */; };
 		25CBC0252717F1CA0016334F /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CBC0242717F1CA0016334F /* QuestionViewModel.swift */; };
 		25CBC028271860770016334F /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CBC027271860770016334F /* QuestionView.swift */; };
+		25CBC02C271868E00016334F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CBC02B271868E00016334F /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		25CBC0212717EFEC0016334F /* QuestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionService.swift; sourceTree = "<group>"; };
 		25CBC0242717F1CA0016334F /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		25CBC027271860770016334F /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		25CBC02B271868E00016334F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		25579C4E2715225900E01803 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				25CBC029271868C50016334F /* Views */,
 				25579C432715152900E01803 /* Constants */,
 			);
 			path = Base;
@@ -155,6 +158,22 @@
 				25CBC027271860770016334F /* QuestionView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		25CBC029271868C50016334F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25CBC02A271868CD0016334F /* Loading */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		25CBC02A271868CD0016334F /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				25CBC02B271868E00016334F /* LoadingView.swift */,
+			);
+			path = Loading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +254,7 @@
 				25CBC0222717EFEC0016334F /* QuestionService.swift in Sources */,
 				25579C362715143700E01803 /* JeopardyAppApp.swift in Sources */,
 				25579C452715154200E01803 /* APIConstants.swift in Sources */,
+				25CBC02C271868E00016334F /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,5 +12,5 @@ struct Constants {
 }
 
 enum APIConstants {
-    static let baseUrl = "http://jservice.io/api/random"
+    static let baseUrl = "http://jservice.io/api"
 }

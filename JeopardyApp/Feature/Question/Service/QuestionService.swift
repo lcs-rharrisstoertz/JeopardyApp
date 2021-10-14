@@ -14,7 +14,7 @@ protocol QuestionService {
 final class QuestionServiceImpl: QuestionService {
     func fetchRandomQuestion() async throws -> Question {
         let urlSession = URLSession.shared
-        let url = URL(string: APIConstants.baseUrl)
+        let url = URL(string: APIConstants.baseUrl.appending("/random"))
         let (data, _) = try await urlSession.data(from: url!)
         return try JSONDecoder().decode(Question.self, from: data)
     }
