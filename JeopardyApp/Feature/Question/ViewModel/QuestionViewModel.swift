@@ -12,7 +12,7 @@ protocol QuestionViewModel: ObservableObject {
 }
 
 @MainActor
-final class QuestionViewModelImpl: QuestionViewModel {
+final class QuestionViewModelImpl: QuestionViewModel, ObservableObject {
     
     @Published private(set) var question: [Question] = []
     
@@ -24,10 +24,11 @@ final class QuestionViewModelImpl: QuestionViewModel {
     
     func getRandomQuestion() async {
         do {
-            self.question = try await service.fetchRandomQuestion()
+            let newQuestion = try await service.fetchRandomQuestion()
+            
+            question.append(newQuestion)
         } catch {
             print(error)
         }
     }
-    
 }

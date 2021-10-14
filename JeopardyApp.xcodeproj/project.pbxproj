@@ -16,6 +16,7 @@
 		25579C4D2715186F00E01803 /* QuestionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25579C4C2715186F00E01803 /* QuestionScreen.swift */; };
 		25CBC0222717EFEC0016334F /* QuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CBC0212717EFEC0016334F /* QuestionService.swift */; };
 		25CBC0252717F1CA0016334F /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CBC0242717F1CA0016334F /* QuestionViewModel.swift */; };
+		25CBC028271860770016334F /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CBC027271860770016334F /* QuestionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		25579C4C2715186F00E01803 /* QuestionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionScreen.swift; sourceTree = "<group>"; };
 		25CBC0212717EFEC0016334F /* QuestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionService.swift; sourceTree = "<group>"; };
 		25CBC0242717F1CA0016334F /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
+		25CBC027271860770016334F /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		25579C472715160D00E01803 /* Question */ = {
 			isa = PBXGroup;
 			children = (
+				25CBC0262718605D0016334F /* Views */,
 				25CBC0232717F1AA0016334F /* ViewModel */,
 				25CBC0202717EFBD0016334F /* Service */,
 				25579C4B2715185200E01803 /* Screen */,
@@ -144,6 +147,14 @@
 				25CBC0242717F1CA0016334F /* QuestionViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		25CBC0262718605D0016334F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25CBC027271860770016334F /* QuestionView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25CBC028271860770016334F /* QuestionView.swift in Sources */,
 				25579C382715143700E01803 /* ContentView.swift in Sources */,
 				25CBC0252717F1CA0016334F /* QuestionViewModel.swift in Sources */,
 				25579C4D2715186F00E01803 /* QuestionScreen.swift in Sources */,
