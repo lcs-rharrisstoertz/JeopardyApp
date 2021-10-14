@@ -12,7 +12,7 @@ protocol QuestionViewModel: ObservableObject {
 }
 
 @MainActor
-final class QuestionViewModelImpl: QuestionViewModel, ObservableObject {
+final class QuestionViewModelImpl: QuestionViewModel {
     
     @Published private(set) var question: [Question] = []
     
