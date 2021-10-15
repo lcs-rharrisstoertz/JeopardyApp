@@ -26,7 +26,7 @@ final class QuestionViewModelImpl: QuestionViewModel {
         do {
             let newQuestion = try await service.fetchRandomQuestion()
             
-            question.append(newQuestion)
+            question.append(newQuestion.last!)
         } catch {
             print(error)
         }

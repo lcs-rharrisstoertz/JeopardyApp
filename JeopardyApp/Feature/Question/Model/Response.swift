@@ -11,6 +11,6 @@ struct Response: Codable {
     let questions: [Question]
 }
 
-extension Response {static let dummyData: Response =
-        Response(questions: [Question(answer: "lead (sample answer)", question: "Franklin noted that the complaint called \"dry-gripes\" resulted from exposure to this toxic metal (sample question)")])
+extension Response {static let dummyData: [Response] =
+        [Response(questions: [Question(answer: "lead (sample answer)", question: "Franklin noted that the complaint called \"dry-gripes\" resulted from exposure to this toxic metal (sample question)")])]
 }

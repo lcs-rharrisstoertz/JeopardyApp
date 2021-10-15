@@ -8,17 +8,16 @@
 import Foundation
 
 protocol QuestionService {
-    func fetchRandomQuestion() async throws -> Response
+    func fetchRandomQuestion() async throws -> [Response]
 }
 
 final class QuestionServiceImpl: QuestionService {
-    func fetchRandomQuestion() async throws -> Response {
+    func fetchRandomQuestion() async throws -> [Response] {
         let urlSession = URLSession.shared
         let url = URL(string: APIConstants.baseUrl.appending("/api/random"))
-        print (url)
         let (data, _) = try await urlSession.data(from: url!)
         do {
-            return try JSONDecoder().decode(Response.self, from: data)
+            return try JSONDecoder().decode([Response].self, from: data)
         } catch {
             print("Failed to decode JSON")
             print(error)
