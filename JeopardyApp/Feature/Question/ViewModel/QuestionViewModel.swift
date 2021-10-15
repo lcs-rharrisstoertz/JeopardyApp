@@ -14,7 +14,7 @@ protocol QuestionViewModel: ObservableObject {
 @MainActor
 final class QuestionViewModelImpl: QuestionViewModel {
     
-    @Published private(set) var question: [Question] = []
+    @Published private(set) var question: [Response] = []
     
     private let service:QuestionService
     

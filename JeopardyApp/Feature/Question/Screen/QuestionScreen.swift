@@ -20,12 +20,21 @@ struct QuestionScreen: View {
                 .ignoresSafeArea()
             
             VStack {
-                if vm.question.isEmpty {
+                if vm.question.last!.questions.isEmpty{
                     LoadingView(text: "Getting question")
                 } else {
-                    QuestionView(question: vm.question.last!)
+                    QuestionView(question: vm.question.last!.questions.first!)
                 }
-                
+                Button(action: {
+                    Task{
+                    await getNewQuestion()
+                    }
+                }) {
+                    Text("New question")
+                        .padding()
+                        .background(Color.white)
+                        .foregroundColor(Color.blue)
+                }
             }
             .task {
                 await vm.getRandomQuestion()
@@ -33,6 +42,12 @@ struct QuestionScreen: View {
             .foregroundColor(Color.white)
         }
     }
+    
+    
+    func getNewQuestion() async {
+            await vm.getRandomQuestion()
+        }
+    
 }
 
 struct QuestionScreen_Previews: PreviewProvider {
