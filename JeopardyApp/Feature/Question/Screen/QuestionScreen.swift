@@ -20,7 +20,7 @@ struct QuestionScreen: View {
                 .ignoresSafeArea()
             
             VStack {
-                if vm.question.last!.questions.isEmpty{
+                if vm.question.isEmpty{
                     LoadingView(text: "Getting question")
                 } else {
                     QuestionView(question: vm.question.last!.questions.first!)

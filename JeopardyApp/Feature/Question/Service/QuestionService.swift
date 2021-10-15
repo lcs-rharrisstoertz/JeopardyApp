@@ -16,6 +16,12 @@ final class QuestionServiceImpl: QuestionService {
         let urlSession = URLSession.shared
         let url = URL(string: APIConstants.baseUrl.appending("/random/api"))
         let (data, _) = try await urlSession.data(from: url!)
-        return try JSONDecoder().decode(Response.self, from: data)
+        do {
+            return try JSONDecoder().decode(Response.self, from: data)
+        } catch {
+            print("Failed to decode JSON")
+            print(error)
+            return Response.dummyData
+        }
     }
 }

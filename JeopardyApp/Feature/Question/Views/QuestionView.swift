@@ -11,20 +11,22 @@ struct QuestionView: View {
     
     let question: Question
     
-    var answerShown = false
+    @State var answerShown = false
     
     var body: some View {
-        Text(question.question)
-            .font(.title)
+        Text("Question: \(question.question)")
+            .font(.title2)
             .fontWeight(.semibold)
+            .multilineTextAlignment(.center)
 
         if answerShown == true {
-            Text(question.answer)
+            Text("Answer: \(question.answer)")
                 .font(.title2)
                 .fontWeight(.semibold)
+                .multilineTextAlignment(.center)
         } else {
             Button(action: {
-                // code to display answer goes here
+                answerShown = true
             }) {
                 Text("Show answer")
                     .padding()
