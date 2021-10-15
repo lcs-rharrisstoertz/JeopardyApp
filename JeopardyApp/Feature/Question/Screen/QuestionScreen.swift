@@ -33,9 +33,11 @@ struct QuestionScreen: View {
                     }
                 }) {
                     Text("New question")
+                        .fontWeight(.medium)
                         .padding()
+                        .frame(width: 250.0)
                         .background(Color.white)
-                        .foregroundColor(Color.blue)
+                        .foregroundColor(Color(red: 0.05, green: 0.078, blue: 0.62, opacity: 1.0))
                 }
             }
             .task {
