@@ -14,16 +14,18 @@ struct QuestionView: View {
     @State var answerShown = false
     
     var body: some View {
-        Text("Question: \(question.question)")
+        Text("\(question.question.uppercased())")
             .font(.title2)
             .fontWeight(.semibold)
             .multilineTextAlignment(.center)
+            .padding()
 
         if answerShown == true {
-            Text("Answer: \(question.answer)")
+            Text("ANSWER: \(question.answer.uppercased())")
                 .font(.title2)
                 .fontWeight(.semibold)
                 .multilineTextAlignment(.center)
+                .padding()
         } else {
             Button(action: {
                 answerShown = true
