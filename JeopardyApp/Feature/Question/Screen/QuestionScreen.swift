@@ -16,7 +16,7 @@ struct QuestionScreen: View {
     var body: some View {
         
         ZStack {
-            Color(red: 0.2, green: 0.3, blue: 0.8, opacity: 1.0)
+            Color(red: 0.031, green: 0.078, blue: 0.52, opacity: 1.0)
                 .ignoresSafeArea()
             
             VStack {
