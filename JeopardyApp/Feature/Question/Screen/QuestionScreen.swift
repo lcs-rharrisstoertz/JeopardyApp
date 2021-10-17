@@ -25,7 +25,7 @@ struct QuestionScreen: View {
                 if vm.question.isEmpty{
                     LoadingView(text: "Getting question")
                 } else {
-                    QuestionView(question: vm.question.last!.questions.first!)
+                    QuestionView(question: vm.question.last!)
                 }
                 Button(action: {
                     Task{

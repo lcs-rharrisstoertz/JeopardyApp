@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuestionView: View {
     
-    let question: Question
+    let question: Response
     
     @State var answerShown = false
     
