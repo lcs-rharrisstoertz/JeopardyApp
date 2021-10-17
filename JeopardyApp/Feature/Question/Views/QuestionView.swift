@@ -16,7 +16,7 @@ struct QuestionView: View {
     var body: some View {
         Text("\(question.question.uppercased())")
             .font(.title2)
-            .fontWeight(.semibold)
+            .fontWeight(.bold)
             .multilineTextAlignment(.center)
             .padding()
         
