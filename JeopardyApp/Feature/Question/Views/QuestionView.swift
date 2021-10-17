@@ -19,7 +19,7 @@ struct QuestionView: View {
             .fontWeight(.semibold)
             .multilineTextAlignment(.center)
             .padding()
-
+        
         if answerShown == true {
             Text("ANSWER: \(question.answer.uppercased())")
                 .font(.title2)
@@ -39,7 +39,7 @@ struct QuestionView: View {
             }
         }
         
-
+        
     }
 }
 

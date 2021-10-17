@@ -16,10 +16,10 @@ struct QuestionScreen: View {
     var body: some View {
         
         ZStack {
-//            Color(red: 0.031, green: 0.078, blue: 0.52, opacity: 1.0)
-//                .ignoresSafeArea()
+            //            Color(red: 0.031, green: 0.078, blue: 0.52, opacity: 1.0)
+            //                .ignoresSafeArea()
             RadialGradient(gradient: Gradient(colors: [Color(red: 0.05, green: 0.078, blue: 0.62, opacity: 1.0), Color(red: 0.031, green: 0.078, blue: 0.32, opacity: 1.0)]), center: .center, startRadius: 100, endRadius: 300)
-                        .ignoresSafeArea()
+                .ignoresSafeArea()
             
             VStack {
                 if vm.question.isEmpty{
@@ -29,7 +29,7 @@ struct QuestionScreen: View {
                 }
                 Button(action: {
                     Task{
-                    await getNewQuestion()
+                        await getNewQuestion()
                     }
                 }) {
                     Text("New question")
@@ -48,8 +48,8 @@ struct QuestionScreen: View {
     }
     
     func getNewQuestion() async {
-            await vm.getRandomQuestion()
-        }
+        await vm.getRandomQuestion()
+    }
     
 }
 
